@@ -20,7 +20,9 @@ This Chrome extension is designed to classify a webpage as either a login or sig
 **To build the extension**
 1. After making changes run ``npm run build``.
 
-https://github.com/asumansenol/login_signup_classfier_chrome_extension/assets/48864422/b53786fd-2d5f-4d1c-b241-cc4ddbf2b2f1
+https://github.com/asumansenol/login_signup_classfier_chrome_extension/assets/48864422/9ca9751a-3e0b-477d-8c5d-290e5f03e000
+
+
 
 
 
