@@ -1,0 +1,11 @@
+const forgotActionVocabs = ['forgot',
+    'reset',
+    'find',
+    'retrieve',
+    'resend',
+    'request',
+    'recover',
+    'change',
+    'lost',
+    'remind',
+    'restore'];

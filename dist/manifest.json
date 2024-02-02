@@ -1,0 +1,67 @@
+{
+	"name": "Signup/Login Classifier",
+	"description": "This extension is created for detection of login and signup pages.",
+	"version": "1.0",
+	"manifest_version": 3,
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "/img/icon.png",
+			"32": "/img/icon.png",
+			"48": "/img/icon.png",
+			"128": "/img/icon.png"
+		}
+	},
+	"icons": {
+		"16": "/img/icon.png",
+		"32": "/img/icon.png",
+		"48": "/img/icon.png",
+		"128": "/img/icon.png"
+	},
+	"permissions": [
+		"activeTab",
+		"scripting",
+		"storage",
+		"tabs",
+		"webNavigation",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.js"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"/register_login_feature_extraction/register_login_vocabulary/account_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/confirm_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/current_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/forgot_action_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/forgot_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/have_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/login_action_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/login_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/new_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/newsletter_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/next_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/not_have_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/password_attr_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/password_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/register_action_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/register_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/remember_me_action_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/remember_me_vocabs.js",
+				"/register_login_feature_extraction/register_login_vocabulary/username_vocabs.js",
+				"/register_login_feature_extraction/register_login_regexes.js",
+				"/register_login_feature_extraction/is_shown.js",
+				"/register_login_feature_extraction/register_login_signals_utils.js",
+				"/register_login_feature_extraction/register_login_signals.js",
+				"content.js"
+			],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	]
+}

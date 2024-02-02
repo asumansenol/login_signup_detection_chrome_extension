@@ -1,0 +1,31 @@
+{
+  "name": "medium-extension",
+  "version": "1.0.0",
+  "description": "This project is developed by [enisfr](https://github.com/enisfr)",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.177",
+    "copy-webpack-plugin": "^10.2.4",
+    "ts-loader": "^9.4.4",
+    "typescript": "^4.9.5",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enisfr/orange-it-up-chrome-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/enisfr/orange-it-up-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/enisfr/orange-it-up-chrome-extension#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.10.0"
+  }
+}

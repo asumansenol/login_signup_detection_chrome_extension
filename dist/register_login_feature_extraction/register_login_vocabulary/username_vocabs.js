@@ -1,0 +1,13 @@
+const usernameVocabs = ['user.name',
+    'user.id',
+    'userid',
+    'screen.name',
+    'screenname',
+    'benutzername',
+    'benutzer.name',
+    'username',
+    'display.name',
+    'displayname',
+    'nickname',
+    'profile.name',
+    'profilename'];
